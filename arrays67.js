@@ -22,7 +22,7 @@ class Adventurer extends Character {
         throw new Error(`Invalid role for adventurer: ${role}`);
       }
       this.role = role;
-      this.inventory.push("bedroll", "50 gold coins");
+      this.inventory.push("bedroll", "50 gold coins", );
     }
   
     static isValidRole(role) {
@@ -62,6 +62,7 @@ class Adventurer extends Character {
   // Create instances using the new Adventurer class
   const robin = new Adventurer("Robin", "Fighter");
   const alice = new Adventurer("Alice", "Wizard");
+  alice.inventory.push("blanket","bag")
   console.log(robin)
   console.log(alice)
   

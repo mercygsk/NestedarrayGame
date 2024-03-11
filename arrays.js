@@ -91,7 +91,7 @@ class Adventurer3 extends Character {                                           
     constructor(name, role) {
       super(name);                                                                                    //super: create object from parent class, inherites
       this.role = role;
-      this.inventory.push("bedroll", "50 gold coins");
+      this.inventory.push("bedroll", "50 gold coins","bag");
     }
     
     scout() {
